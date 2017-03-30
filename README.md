@@ -1,0 +1,1 @@
+MG (mini games template)
