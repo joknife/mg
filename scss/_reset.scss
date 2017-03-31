@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block; }
+
+a {
+	 text-decoration: none;}
+
+ol, ul {
+	list-style: none; }
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0; }
+
+html {
+	box-sizing: border-box;
+	overflow-y: scroll; }
+
+input, select {
+	vertical-align: middle; }
+
+img, object, embed {
+	max-width: 100%; }
+
+label, input[type=button], input[type=submit], input[type=file], button {
+	cursor: pointer; }
+
+button, input[type=button] {
+	width: auto;
+	overflow: visible; }
+
+.clearfix:before, .clearfix:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	overflow: hidden; }
+
+.clearfix:after {
+	clear: both; }
+	
+.clearfix {
+	zoom: 1; }

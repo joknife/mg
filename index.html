@@ -1,13 +1,54 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="utf-8">
-	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<title>Minigames</title>
-	<link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-	it still works
-	<script type="text/javascript" src="js/main.js"></script>
-</body>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		<title>Minigames</title>
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<header>
+				<a class="logo" href="index.html"><img src="img/logo.png" alt="MG"></a>
+				<h1>MINI GAMES</h1>
+				<p>Создано в рамках личного изучения <br> фронтенд технологий</p>
+			</header>
+			<h2>ВЫБОР ИГРЫ</h2>
+			<content>
+				<div class="cont-box">
+					<a href="tictac.html">
+						<h3>КРЕСТИКИ НОЛИКИ</h3> 
+						<p>Классические крестики нолики 3х3. Игра с одного компьютера. Игроки ходят по очереди, каждый за свой знак. Над игровым полем подсказка чья очередь ходить. Победу программа определяет автоматически.</p>
+					</a>
+					<img src="img/tt.png">
+				</div>
+				<div class="cont-box">
+					<a href="numbers.html">
+						<h3>ЦИФРЫ</h3>
+						<p>На поле каждый раз по разному генерируются цифры от 1 до 25. Цель - нажимать по очереди на клетки с цифрами по порядку от 1 и до 25 за заданное время. Нажатие мимо клетки со следующей цифрой сокращает время на 3с. Удачи!</p>
+					</a>
+					<img src="img/num.png">
+				</div>
+				<div class="cont-box">
+					<a href="#">
+						<h3>ЛОГИКА</h3>
+						<p>Суть игры - нужно отгадать 4 цвета из 6-ти возможных. Нажмая на пустые кружки вставляйте цвета. После нажатия "Готово"" выводится подсказка : черный кружок - означает что один из цветов есть и он на правильном месте; белый кружок - один из цветов есть, но на другом месте; серый кружок - этого цвета нет. Порядок кужков подсказки не соответствует порядку в ответе.</p>
+					</a>
+					<img src="img/logic.png">
+				</div>
+				<!--div class="cont-box">
+					<img src="http://dummyimage.com/300x300/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+				</div-->
+			</content>
+
+			<footer>
+				&copy Sergey Oreshkin 2017
+			</footer>
+		</div>
+	</body>
+
 </html>

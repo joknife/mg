@@ -1,0 +1,77 @@
+@import 'reset';
+
+@font-face { 
+	font-family: 'Tesla'; 
+	src: url('../fonts/Tesla.ttf');
+	font-style: normal;
+	font-weight: normal; }
+
+$cbz: 18em;
+
+body {
+	font: 100%/1.5em Arial, Helvetica, sans-serif;
+	background-color: #ccc;
+	color: #2D52A4; }
+
+#wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh; }
+
+header {
+	height: 9em;
+	display: flex; 
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #9DACCD; }
+
+.logo {
+	width: 20%;
+	img {
+	width: 100%; }}
+
+
+h1 {
+	font-family: Tesla, Arial, sans-serif;
+	font-size: 3.5em; }
+
+h2 {
+	font-size: 2.5em;
+	text-align: center;
+	padding: 10px 0;
+}
+
+h3 {
+	text-align: center;
+	font-size: 1.5em; }
+
+content {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	background-color: #9DACCD; }
+
+.cont-box {
+	text-align: justify;
+	position: relative;
+	overflow: hidden;
+	margin: 5px 0;
+	width: $cbz;
+	height: $cbz;
+
+	a {color: #2D52A4; }
+
+	img{
+		position: absolute;
+		top: 0; }
+
+	&:hover img{
+		transition: all .7s ease-in-out 0s;
+		transform: translate($cbz, 4em); } }
