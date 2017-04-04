@@ -92,6 +92,7 @@ button {
 }
 
 #num-display{
+	text-align: center;
 	box-shadow:3px 5px 5px 0 rgba(0,0,0,.6);
 	margin: 5px 0;
 	border: 1px solid black;
@@ -111,6 +112,9 @@ button {
 	margin-bottom: 20px; }
 
 .num-item{
+	cursor: pointer;
+	line-height: 58px;
+	text-align: center;
 	width: 58px;
 	height: 58px;
 	border: 1px solid black;
@@ -126,6 +130,7 @@ button {
 		height: 250px; }
 
 	.num-item{
+		line-height: 58px;
 		width: 48px;
 		height: 48px; }
 

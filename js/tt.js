@@ -3,9 +3,9 @@
 Q('#tt-display').value("");
 
 var items = [],
-sign = ['X', 'O'],
-move = 0,
-game = false;
+	sign = ['X', 'O'],
+	move = 0,
+	game = false;
 
 var start = function() {
 	items.length = 0;
