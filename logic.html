@@ -8,6 +8,8 @@
 		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 		<title>Minigames</title>
 		<link rel="stylesheet" href="css/lg.css">
+
+		<script type="text/javascript" src="js/lib.js"></script>
 	</head>
 
 	<body>
@@ -25,32 +27,34 @@
 				</ul>
 			</nav>
 			<content>
-				<div class="collect">
-					<div class="c-item c-1"></div>
-					<div class="c-item c-2"></div>
-					<div class="c-item c-3"></div>
-					<div class="c-item c-4"></div>
-					<div class="c-item c-5"></div>
-					<div class="c-item c-6"></div>
+				<div class="coll">
+					<div class="c-item" id="c1"></div>
+					<div class="c-item" id="c2"></div>
+					<div class="c-item" id="c3"></div>
+					<div class="c-item" id="c4"></div>
+					<div class="c-item" id="c5"></div>
+					<div class="c-item" id="c6"></div>
 				</div>
 				<h2>Логика</h2>
-				<button>Начать игру</button>
-				<input id = "lg-display" type="text" disabled value="Включите javascript!">
+				<button id = 'start'>Начать игру</button>
+
 				<div class="lg-field">
 					<div class="secret board">
-						<div class="s item">?</div>
-						<div class="s item">?</div>
-						<div class="s item">?</div>
-						<div class="s item">?</div>
+						<div class="s"></div>
+						<div class="s"></div>
+						<div class="s"></div>
+						<div class="s"></div>
 					</div>
-					<div class="board b-1">
-						<div class="item i-1"></div>
-						<div class="item i-2"></div>
-						<div class="item i-3"></div>
-						<div class="item i-4"></div>
+					<div class="board">
+						<div class="item" id="i11"></div>
+						<div class="item" id="i21"></div>
+						<div class="item" id="i31"></div>
+						<div class="item" id="i41"></div>
 					</div>
 				</div>
-				<button type="submit">Готово</button>
+				
+				<input id = "lg-display" type="text" disabled value="Включите javascript!">
+				<button type="submit" id='done'>Готово</button>
 			</content>
 			<footer>
 				&copy Sergey Oreshkin 2017

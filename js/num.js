@@ -10,7 +10,7 @@ var handl,
 						"aqua","green","lime","olive","orange"];
 
 for(var i = 0; i < 25; i++){
-	initArr[i] = i+1;
+	initArr.push(i+1);
 }
 
 var loose = function() {
@@ -22,7 +22,7 @@ var loose = function() {
 var win = function() {
 	number = 0;
 	clearInterval(handl);
-	Q('#num-display').value('Вы не успели!');
+	Q('#num-display').value('Вы справились!');
 }
 
 var timer = function(max) {
