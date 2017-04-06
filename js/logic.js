@@ -17,7 +17,6 @@ collItems.forEach( function(elem, i) {
 });
 collBoard.style.display = 'none';
 
-
 var start =function() {
 	count = 1;
 	secret =[];
@@ -47,10 +46,17 @@ var choose =function() {
 var showColl = function(e) {
 	if (count === 0) {return false;}
 	if (+this.id[2] !== count) {return false;}
+	if (document.documentElement.clientWidth <= 360) {
+		offsetX = 0;
+		offsetY = -60;
+	} else {
+		offsetX = -120;
+		offsetY = -10;
+	}
 
 	item = this;
-	var x = e.clientX + offsetX,
-			y = e.clientY + offsetY;
+	var x = e.pageX + offsetX,
+			y = e.pageY + offsetY;
 	
 	if (collBoard.style.display === 'block'){
 		collBoard.style.display = 'none';
@@ -141,6 +147,7 @@ function nextBoard() {
 		items = items + "<div class='item' id ='i"
 						+ i + '' + count + "'></div>";
 	}
+
 	Q('.lg-field').append('div', 'board add', items);
 	Q('.item').onclick(showColl);
 }
