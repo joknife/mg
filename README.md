@@ -1,1 +1,3 @@
-MG (mini games template)
+MG (mini games)
+
+I jast learn css & js
